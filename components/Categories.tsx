@@ -9,7 +9,7 @@ const Categories = () => {
     <Container>
       <Row>
         <Col>
-          <Link href="/">
+          <Link href="/topic/marketing">
             <Image
               src="/images/market.jpeg"
               alt="Marketing Category"
@@ -19,7 +19,7 @@ const Categories = () => {
           </Link>
         </Col>
         <Col>
-          <Link href="/business">
+          <Link href="/topic/business">
             <Image
               src="/images/business.jpeg"
               alt="Business Category "
@@ -30,7 +30,7 @@ const Categories = () => {
         </Col>
 
         <Col>
-          <Link href="/design">
+          <Link href="/topic/design">
             <Image
               src="/images/design.jpeg"
               alt="Design Category "
@@ -41,7 +41,7 @@ const Categories = () => {
         </Col>
 
         <Col>
-          <Link href="/development">
+          <Link href="/topic/development">
             <Image
               src="/images/development.jpeg"
               alt="Development Category "
@@ -53,7 +53,7 @@ const Categories = () => {
       </Row>
       <Row>
         <Col>
-          <Link href="/it-and-software">
+          <Link href="/topic/it-and-software">
             <Image
               src="/images/it-and-software.jpeg"
               alt="IT and Software Category "
@@ -64,7 +64,7 @@ const Categories = () => {
         </Col>
 
         <Col>
-          <Link href="/music">
+          <Link href="/topic/music">
             <Image
               src="/images/music.jpeg"
               alt="Music Category "
@@ -75,7 +75,7 @@ const Categories = () => {
         </Col>
 
         <Col>
-          <Link href="/personal">
+          <Link href="/topic/personal">
             <Image
               src="/images/personal-dev.jpeg"
               alt="Personal Development Category "
@@ -86,7 +86,7 @@ const Categories = () => {
         </Col>
 
         <Col>
-          <Link href="/photography">
+          <Link href="/topic/photography">
             <Image
               src="/images/photography.jpeg"
               alt="Photography Category "
