@@ -14,20 +14,34 @@ const Header = (): JSX.Element => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
+              <NavDropdown title="Categories" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">
+                  Development
                 </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Business</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  Something
+                  Finance & Accounting
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                  Office Productivity
                 </NavDropdown.Item>
+
+                <NavDropdown.Item href="#action/3.4">
+                  Personal Development
+                </NavDropdown.Item>
+
+                <NavDropdown.Item href="#action/3.4">Design</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">
+                  Marketing
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Music</NavDropdown.Item>
+
+                <NavDropdown.Item href="#action/3.4">Health</NavDropdown.Item>
               </NavDropdown>
+            </Nav>
+            <Nav>
+              <Nav.Link eventKey={2}>Log in</Nav.Link>
+              <Nav.Link>Sign up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
