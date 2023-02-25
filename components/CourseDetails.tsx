@@ -13,6 +13,8 @@ const CourseDetails = (): JSX.Element => {
             HTML | CSS | JavaScript | Web programming | Web development |
             Front-end | Responsive | JQuery
           </p>
+          <p>35,757 students</p>
+          <p>Created by Haider Malik</p>
         </Col>
         <Col>
           <Card>
