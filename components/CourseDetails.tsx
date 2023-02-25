@@ -1,6 +1,6 @@
 'use client';
 
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Card, Button } from 'react-bootstrap';
 import Vimeo from '@u-wave/react-vimeo';
 
 const CourseDetails = (): JSX.Element => {
@@ -15,7 +15,13 @@ const CourseDetails = (): JSX.Element => {
           </p>
         </Col>
         <Col>
-          <Vimeo video="802252358" />
+          <Card>
+            <Card.Body>
+              <Vimeo video="785538329" />
+              <h2>$15</h2>
+              <Button variant="primary">Add to Cart</Button>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </Container>
