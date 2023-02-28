@@ -36,3 +36,79 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### NOTES
+
+### THINK IN TERMS OF MODELS
+
+
+### MODELS
+
+COURSE
+SECTION
+VIDEO
+TOPIC
+
+### Relationship
+
+### ONE TO MANY RELATIONSHIP
+
+- A course can belong to a topic
+- A topic can have many courses
+
+- A Course can have many sections
+- Many sections can belong to single course
+
+### Many to Many relationship
+
+- Many videos can belong to many sections
+
+
+```js
+const course = {
+   
+   title: 'Web Development',
+   desc: 'HTML | CSS | JavaScript | Web programming | Web development | Front-end | Responsive | JQuery',
+   author: 'Haider Malik',
+   promo: 'vimeoId',
+   pirce: 13,
+   outcomes: ['prepare for your indiustry', ''],
+   slug: 'web-development',
+   topic: 'Development',
+   sections: [
+    {
+        id: 1,
+        title : 'Getting started node',
+        desc: 'Section Description',
+        videos: [
+            {
+                id: 1,
+                title: 'Create Node server',
+                vimeoId: '123123'
+
+            } 
+        ]
+    },
+     {
+        id: 2,
+        title : 'Deploy Node server',
+        desc: 'Section Description',
+        videos: [
+            {
+                id: 3,
+                title: 'Create Node server',
+                vimeoId: '123123'
+
+            },
+            {
+                id: 2,
+                title: 'Install Node',
+                vimeoId: '123123'
+
+            }  
+        ]
+    }
+   ]
+
+}
+```
