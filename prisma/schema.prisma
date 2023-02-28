@@ -10,11 +10,62 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Topic {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  title   String
+  courses Course[]
+}
+
 model Course {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  title String
-  desc  String
+  title    String
+  desc     String
+  slug     String   @unique
+  promo    String
+  outcomes String[]
+
+  topic   Topic @relation(fields: [topicId], references: [id])
+  topicId Int
+
+  sections Section[]
+}
+
+model Section {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title     String
+  desc      String
+
+  Course          Course?           @relation(fields: [courseId], references: [id])
+  courseId        Int?
+  sectionOnVideos SectionOnVideos[]
+}
+
+model Video {
+  id              Int               @id @default(autoincrement())
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  title           String
+  vimeoId         String
+  sectionOnVideos SectionOnVideos[]
+}
+
+model SectionOnVideos {
+  section   Section @relation(fields: [sectionId], references: [id])
+  sectionId Int
+
+  video   Video @relation(fields: [videoId], references: [id])
+  videoId Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@id([sectionId, videoId])
 }
