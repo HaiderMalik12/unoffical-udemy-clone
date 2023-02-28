@@ -12,16 +12,16 @@ export async function GET(request: Request) {
 export async function POST(request: Request) {
   // const topic = await prisma.topic.create({
   //   data: {
-  //     title: 'Web Development',
-  //     slug: 'web-development',
+  //     title: 'Marketing',
+  //     slug: 'marketing',
   //   },
   // });
 
   const course = await prisma.course.create({
     data: {
-      title: 'Web Development masterclass',
-      desc: 'Learn web developmenet step by step',
-      slug: 'web-development-masterclass',
+      title: 'Marketing masterclass',
+      desc: 'Learn marketing step by step',
+      slug: 'marketing-masterclass',
       promo: '12333',
       outcomes: [
         'Prepare for Industry Certification Exam',

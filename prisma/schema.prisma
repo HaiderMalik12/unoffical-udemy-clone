@@ -16,7 +16,7 @@ model Topic {
   updatedAt DateTime @updatedAt
 
   title   String
-  slug    String
+  slug    String   @unique
   courses Course[]
 }
 
