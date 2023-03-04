@@ -1,13 +1,12 @@
 'use client';
 
-import { Col, Container, Row, Card, Button } from 'react-bootstrap';
 import Vimeo from '@u-wave/react-vimeo';
 
-const CourseDetails = (): JSX.Element => {
+export function CourseDetails(): JSX.Element {
   return (
-    <Container className="p-4">
-      <Row>
-        <Col>
+    <div className="container p-2">
+      <div className="row">
+        <div className="col">
           <h3>Web Development Masterclass & Certifications</h3>
           <p>
             HTML | CSS | JavaScript | Web programming | Web development |
@@ -15,19 +14,19 @@ const CourseDetails = (): JSX.Element => {
           </p>
           <p>35,757 students</p>
           <p>Created by Haider Malik</p>
-        </Col>
-        <Col>
-          <Card>
-            <Card.Body>
+        </div>
+        <div className="col">
+          <div className="card">
+            <div className="card-body">
               <Vimeo video="785538329" />
               <h2>$15</h2>
-              <Button variant="primary">Add to Cart</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+              <button className="btn btn-primary" type="button">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-};
-
-export default CourseDetails;
+}

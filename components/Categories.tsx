@@ -1,14 +1,11 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Col, Container, Row } from 'react-bootstrap';
-
-const Categories = () => {
+export function Categories() {
   return (
-    <Container>
-      <Row>
-        <Col>
+    <div className="container">
+      <div className="row">
+        <div className="col">
           <Link href="/topic/marketing">
             <Image
               src="/images/market.jpeg"
@@ -17,8 +14,8 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
-        <Col>
+        </div>
+        <div className="col">
           <Link href="/topic/business">
             <Image
               src="/images/business.jpeg"
@@ -27,9 +24,9 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
+        </div>
 
-        <Col>
+        <div className="col">
           <Link href="/topic/design">
             <Image
               src="/images/design.jpeg"
@@ -38,9 +35,9 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
+        </div>
 
-        <Col>
+        <div className="col">
           <Link href="/topic/development">
             <Image
               src="/images/development.jpeg"
@@ -49,10 +46,10 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
           <Link href="/topic/it-and-software">
             <Image
               src="/images/it-and-software.jpeg"
@@ -61,9 +58,9 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
+        </div>
 
-        <Col>
+        <div className="col">
           <Link href="/topic/music">
             <Image
               src="/images/music.jpeg"
@@ -72,9 +69,9 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
+        </div>
 
-        <Col>
+        <div className="col">
           <Link href="/topic/personal">
             <Image
               src="/images/personal-dev.jpeg"
@@ -83,9 +80,9 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
+        </div>
 
-        <Col>
+        <div className="col">
           <Link href="/topic/photography">
             <Image
               src="/images/photography.jpeg"
@@ -94,10 +91,8 @@ const Categories = () => {
               height={200}
             />
           </Link>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
-};
-
-export default Categories;
+}
