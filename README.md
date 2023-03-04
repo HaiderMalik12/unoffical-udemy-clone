@@ -112,3 +112,7 @@ const course = {
 
 }
 ```
+
+### Issues
+
+- <https://github.com/react-bootstrap/react-bootstrap/issues/6475>
