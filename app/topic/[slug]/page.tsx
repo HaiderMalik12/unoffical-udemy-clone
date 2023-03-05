@@ -1,7 +1,7 @@
 import { Courses } from '@/components/Courses';
 
 const getData = async (slug: string) => {
-  const data = await fetch(`http://localhost:3000/api/topics/${slug}`);
+  const data = await fetch(`http://localhost:3001/api/topics/${slug}`);
   const courses = await data.json();
   return courses;
 };
