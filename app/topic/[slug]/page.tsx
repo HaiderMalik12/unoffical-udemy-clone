@@ -6,15 +6,16 @@ type TopicProps = {
   };
 };
 const getData = async (slug: string) => {
-  const data = await fetch(`http://localhost:3001/api/topics/${slug}`);
+  const data = await fetch(`http://localhost:3001/api/topics/${slug}`, {
+    cache: 'no-store',
+  });
   const courses = await data.json();
   return courses;
 };
 export default async function Topic({ params }: TopicProps) {
   const slug = params.slug;
   // create getData method
-  const courses = await getData(slug);
-  // console.log(courses);
+  const results = await getData(slug);
   // you must need to get the slug
   // fetch the courses on the based on slug
   // you need to provide the courses array
@@ -23,7 +24,7 @@ export default async function Topic({ params }: TopicProps) {
 
   return (
     <>
-      <Courses courses={courses} />
+      <Courses courses={results.courses} />
     </>
   );
 }

@@ -1,10 +1,10 @@
 ### FETCH A COURSE ON THE BASED ON SLUG
-GET http://localhost:3000/api/courses/web-development-masterclass
+GET http://localhost:3001/api/courses/web-development-masterclass
 
 ### CREATE A NEW COURSE
-POST http://localhost:3000/api/courses
+POST http://localhost:3001/api/courses
 
 
 ### FETCH COURSE ON THE BASED ON TOPIC SLUG
 
-GET http://localhost:3000/api/topics/marketing
+GET http://localhost:3001/api/topics/web-development

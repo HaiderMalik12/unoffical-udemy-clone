@@ -19,9 +19,9 @@ export async function POST(request: Request) {
 
   const course = await prisma.course.create({
     data: {
-      title: 'Marketing masterclass',
-      desc: 'Learn marketing step by step',
-      slug: 'marketing-masterclass',
+      title: 'Rust in Action',
+      desc: 'Learn Rust step by step',
+      slug: 'rust-tutorials',
       promo: '12333',
       outcomes: [
         'Prepare for Industry Certification Exam',
